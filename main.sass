@@ -1,0 +1,156 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+
+
+/////////////////////////////////////////////////
+
+
+.logo, .main-navigation, .user-block
+	list-style: none;
+	margin: 0
+	display: flex
+	border: 1px solid black
+
+
+.header-address li,
+.user-settings li
+	display: inline-block
+	margin: 5px 0 2px
+
+.logo,.user-block
+	box-sizing: border-box
+	background-color: red
+	width: 100%
+
+.user-block
+/*	padding: 0
+	margin: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-webkit-flex-direction: row-reverse
+	-moz-flex-direction: row-reverse
+	-ms-flex-direction: row-reverse
+	-o-flex-direction: row-reverse
+	flex-direction: row-reverse*/
+
+
+.user-block ul
+	margin: 0
+	padding: 0
+
+.user-block li
+	display: inline-block
+	margin: 5px 0 2px
+
+
+.main-navigation
+	padding: 0
+
+
+
+.main-navigation ul
+	width: 100%
+	border: 1px solid red
+	margin: 0
+	padding: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	overflow: hidden;
+
+
+.main-navigation li
+	margin: 0
+	display: inline-block
+	box-sizing: border-box
+	flex: 1 1 0
+	padding: 1em 
+
+.main-navigation a
+	text-transform: uppercase
+
+.main-navigation li:hover
+	background-color: gray
+
+.js .main-navigation 
+	overflow: hidden
+	max-height: 0
+
+
+.main-navigation.active
+	max-height: 17em
+	width: 100%
+
+
+.menu-link2 
+	float: left;
+	margin: 0 1% 5px 0
+	padding: 1.5em 1em 1em
+	background: #f6f6f6
+	line-height: 0
+	text-decoration: none
+	color: #333
+	border-radius: 2px
+	cursor: pointer
+	align-self:flex-start
+
+.menu-link2:before 
+	display: block
+	padding: 10px 0
+	content: '≡'
+	font-size: 3em
+	line-height: 0
+
+.menu-link2.active 
+	background: #333
+	color: #fff;
+
+.menu-link2 span 
+	display: inline-block
+	text-indent: -100%
+	overflow: hidden
+	white-space: nowrap
