@@ -154,3 +154,125 @@ b, strong
 	text-indent: -100%
 	overflow: hidden
 	white-space: nowrap
+
+.row-flex 
+	display: flex
+	flex-wrap: wrap
+.content
+	height: 100%
+
+
+
+
+
+
+.header-wrapper
+	display: flex
+	/*width: 90%*/
+	margin: auto
+	justify-content: space-between
+
+.header-wrapper > div
+	margin: 0
+
+.header-wrapper *
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	-ms-box-sizing: border-box
+	box-sizing: border-box
+	border: 1px solid red
+	
+
+.header-logo
+	flex-basis: 100px
+	flex-shrink: 0
+
+.navigation-wrapper
+	flex-shrink: 1
+	flex-grow: 1
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+.header-navigation
+	flex-grow: 1
+	
+
+.nav-header__list--closed
+
+
+.header-navigation ul
+		display: flex
+		justify-content: space-between
+		margin: 0
+		padding: 0
+		list-style: none
+		width: 100%
+		+media-breakpoint-down(sm)
+			flex-direction: column
+		li
+			padding-left: 5px
+			padding-right: 5px
+			+media-breakpoint-down(sm)
+				width: 100%
+				text-align: center
+			a
+				font-size: 14px
+				font-weight: 700
+				line-height: 20px
+				text-transform: uppercase
+				padding: 10px
+
+.main-nav__inner
+	+media-breakpoint-down(sm)
+			display: none
+
+.header-user-block
+	flex-basis: 200px
+	flex-shrink: 0
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+		.example
+			display: flex
+			flex-wrap: nowrap
+			.input-text
+				flex: 0 0 150px
+
+// кнопка меню навигации
+
+.main-nav__button 
+	display: none
+	+media-breakpoint-down(sm)
+		display: block
+		position: relative
+		margin: 0 auto
+		padding: 0
+		width: 40px
+		height: 40px
+		border: 1px solid #62a13b
+		background-color: #f7f7f7
+
+
+
+
+.main-nav__button-line
+		&:after
+			content: ""
+			position: absolute
+			left: 4px
+			width: 30px
+			height: 1px
+			background-color: #62a13b
+			top: 9px
+		&:before
+			content: ""
+			position: absolute
+			left: 4px
+			width: 30px
+			height: 1px
+			background-color: #62a13b
+			bottom: 9px
+
+
