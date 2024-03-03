@@ -275,4 +275,46 @@ b, strong
 			background-color: #62a13b
 			bottom: 9px
 
+.main-nav__button-line, .main-nav__button-line--close 
+		+media-breakpoint-down(sm)
+			display: block
+			margin: 0 auto
+			width: 30px
+			height: 1px
+			background-color: #62a13b
+			border: none
+
+.main-nav__button-line--close 
+		+media-breakpoint-down(sm)
+			background-color: transparent
+			-webkit-transform: rotate(45deg)
+			transform: rotate(45deg)
+
+
+.main-nav__button-line--close::after, .main-nav__button-line--close::before
+		+media-breakpoint-down(sm)
+			content: ""
+			position: absolute
+			width: 30px
+			height: 1px
+			background-color: #62a13b
+			left: 0
+
+.main-nav__button-line--close::before
+		+media-breakpoint-down(sm)
+			top: 0px
+			left: 0px
+			-webkit-transform: rotate(90deg)
+			transform: rotate(90deg)
+
+.main-nav__button-line--close::after
+		+media-breakpoint-down(sm)
+			top: 0px
+			left: 0px
+			-webkit-transform: rotate(180deg)
+			transform: rotate(180deg)
+
+.main-nav__inner--visible
+	+media-breakpoint-down(sm)
+		display: block
 
