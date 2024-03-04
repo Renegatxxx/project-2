@@ -318,3 +318,48 @@ b, strong
 	+media-breakpoint-down(sm)
 		display: block
 
+.profile-form *
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	-ms-box-sizing: border-box
+	box-sizing: border-box
+	border: 1px solid red
+
+.profile-form
+	width: 100%
+
+.profile-form__field-wrap 
+	display: flex
+	flex-direction: row
+	align-items: center
+	margin-bottom: 25px
+	+media-breakpoint-down(sm)
+		flex-direction: column
+		align-items: flex-start
+
+.profile-form__label 
+	flex: 0 0 155px
+	width: 155px
+	margin-bottom: 0
+	letter-spacing: .01em
+	+media-breakpoint-down(sm)
+		flex: 0 1
+
+.profile-form__input
+	height: 30px
+	flex: 1 0
+	border: 1px solid black
+	+media-breakpoint-down(sm)
+		width: 100%
+
+
+.profile-form__selects-container
+	display: flex
+	justify-content: space-between
+	width: 100%
+
+@import "media" // Always at the end
+
+
+
+
